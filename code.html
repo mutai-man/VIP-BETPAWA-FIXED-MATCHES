@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Correct Score Matches - Uganda & Tanzania</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #283e51, #485563);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: #1c262f;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 15px #0f1620;
+  }
+
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    color: #4ce1b6;
+  }
+
+  header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #a0eac0;
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255 255 255 / 0.08);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 15px #2c4a58;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  section h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #4ce1b6;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .match-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .match-item {
+    background: rgba(76, 225, 182, 0.15);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px rgb(76 225 182 / 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .match-item:nth-child(odd) {
+    background: rgba(76, 225, 182, 0.10);
+  }
+
+  .team-names {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+  }
+  .score-prediction {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #4ce1b6;
+    color: #0a2e24;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+    min-width: 60px;
+    text-align: center;
+  }
+
+  .purchase-section {
+    background: #1c262f;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #4ce1b6;
+  }
+
+  .purchase-section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #4ce1b6;
+  }
+
+  .purchase-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #b0f4d1;
+  }
+
+  .btn-buy {
+    background: #4ce1b6;
+    color: #0a2e24;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #32b890cc;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-buy:hover,
+  .btn-buy:focus {
+    background: #36b68c;
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  footer {
+    background: #141c22;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #4ce1b6;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+    .match-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .score-prediction {
+      margin-top: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Correct Score Predictions</h1>
+  <p>Accurate match score forecasts for Uganda & Tanzania international games</p>
+</header>
+<main>
+  <section id="uganda">
+    <h2>Uganda International Matches</h2>
+    <ul class="match-list">
+      <li class="match-item">
+        <span class="team-names">Uganda vs Kenya</span>
+        <span class="score-prediction">2 - 1</span>
+      </li>
+      <li class="match-item">
+        <span class="team-names">Uganda vs Rwanda</span>
+        <span class="score-prediction">1 - 1</span>
+      </li>
+      <li class="match-item">
+        <span class="team-names">Uganda vs South Sudan</span>
+        <span class="score-prediction">3 - 0</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="tanzania">
+    <h2>Tanzania International Matches</h2>
+    <ul class="match-list">
+      <li class="match-item">
+        <span class="team-names">Tanzania vs Ethiopia</span>
+        <span class="score-prediction">1 - 0</span>
+      </li>
+      <li class="match-item">
+        <span class="team-names">Tanzania vs Burundi</span>
+        <span class="score-prediction">2 - 2</span>
+      </li>
+      <li class="match-item">
+        <span class="team-names">Tanzania vs Malawi</span>
+        <span class="score-prediction">3 - 1</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="purchase-section">
+    <h2>Purchase Predictions</h2>
+    <p>Get premium, accurate correct score predictions for upcoming matches. Secure your winning bets today!</p>
+    <button class="btn-buy" onclick="alert('Thank you for your interest! Please contact us at sales@cs-predict.com or call +123-456-7890 to complete your purchase.')">Buy Now</button>
+    <p><em>Contact us for custom predictions or bulk packages.</em></p>
+  </section>
+</main>
+<footer>
+  &copy; 2024 Correct Score Predictions | Contact: sales@cs-predict.com | +123-456-7890
+</footer>
+</body>
+</html>
+
